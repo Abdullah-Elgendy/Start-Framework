@@ -1,1 +1,68 @@
-<p>portfolio works!</p>
+<div class="container min-vh-100">
+    <!-- Modal -->
+    <div class="modal fade" id="ImgModal" tabindex="-1" aria-labelledby="ImgModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img #ModalImg class="w-100" src="./imgs/imgi_1_port1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <app-title>portfolio component</app-title>
+    <div class="row gy-5 gx-5 pb-4">
+        <div class="col-md-6 col-lg-4">
+            <div (click)="setModalImg('./imgs/imgi_1_port1.png')" data-bs-toggle="modal" data-bs-target="#ImgModal"
+                class="card-img position-relative ">
+                <img class="img-fluid rounded-3" src="./imgs/imgi_1_port1.png" alt="" />
+                <div class="overlay rounded-3 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-plus fa-6x rounded-circle text-white"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div (click)="setModalImg('./imgs/imgi_2_port2.png')" data-bs-toggle="modal" data-bs-target="#ImgModal"
+                class="card-img position-relative ">
+                <img class="img-fluid rounded-3" src="./imgs/imgi_2_port2.png" alt="" />
+                <div class="overlay rounded-3 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-plus fa-6x rounded-circle text-white"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div (click)="setModalImg('./imgs/imgi_3_port3.png')" data-bs-toggle="modal" data-bs-target="#ImgModal"
+                class="card-img position-relative ">
+                <img class="img-fluid rounded-3" src="./imgs/imgi_3_port3.png" alt="" />
+                <div class="overlay rounded-3 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-plus fa-6x rounded-circle text-white"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div (click)="setModalImg('./imgs/imgi_1_port1.png')" data-bs-toggle="modal" data-bs-target="#ImgModal"
+                class="card-img position-relative ">
+                <img class="img-fluid rounded-3" src="./imgs/imgi_1_port1.png" alt="" />
+                <div class="overlay rounded-3 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-plus fa-6x rounded-circle text-white"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div (click)="setModalImg('./imgs/imgi_2_port2.png')" data-bs-toggle="modal" data-bs-target="#ImgModal"
+                class="card-img position-relative ">
+                <img class="img-fluid rounded-3" src="./imgs/imgi_2_port2.png" alt="" />
+                <div class="overlay rounded-3 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-plus fa-6x rounded-circle text-white"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div (click)="setModalImg('./imgs/imgi_3_port3.png')" data-bs-toggle="modal" data-bs-target="#ImgModal"
+                class="card-img position-relative ">
+                <img class="img-fluid rounded-3" src="./imgs/imgi_3_port3.png" alt="" />
+                <div class="overlay rounded-3 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-plus fa-6x rounded-circle text-white"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

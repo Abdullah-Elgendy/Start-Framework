@@ -1,1 +1,33 @@
-<p>contact works!</p>
+<div class="container min-vh-100">
+    <app-title>contact section</app-title>
+    <form class="w-50 mx-auto d-flex flex-column pt-5" action="">
+        <div class="inputField position-relative mb-2">
+            <p #name class="text-secondary input-label top-move position-relative">userName :</p>
+            <input #userName (input)="moveLabel(userName.value,name)"
+                class="form-control border-0 border-bottom bg-white p-3" placeholder="userName" type="text"
+                name="userName" id="userName">
+        </div>
+
+        <div class="inputField position-relative mb-2">
+            <p #age class="text-secondary input-label top-move position-relative">userAge :</p>
+            <input #userAge (input)="moveLabel(userAge.value, age)"
+                class="form-control border-0 border-bottom bg-white p-3" placeholder="userAge" type="number"
+                name="userAge" id="userAge">
+        </div>
+
+        <div class="inputField position-relative mb-2">
+            <p #email class="text-secondary input-label top-move position-relative">userEmail :</p>
+            <input #userEmail (input)="moveLabel(userEmail.value, email)"
+                class="form-control border-0 border-bottom bg-white p-3" placeholder="userEmail" type="email"
+                name="userEmail" id="userEmail">
+        </div>
+
+        <div class="inputField position-relative mb-2">
+            <p #password class="text-secondary input-label top-move position-relative">userPassword :</p>
+            <input #userPassword (input)="moveLabel(userPassword.value, password)"
+                class="form-control border-0 border-bottom bg-white p-3" placeholder="userPassword" type="text"
+                name="userPassword" id="userPassword">
+        </div>
+        <button class="btn bg-secondary text-white align-self-start mt-2" type="submit">Send Message</button>
+    </form>
+</div>
