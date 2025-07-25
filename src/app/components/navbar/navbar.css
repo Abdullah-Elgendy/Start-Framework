@@ -1,0 +1,9 @@
+.nav-link{
+    color: white;
+    margin-inline: 15px;
+}
+
+.active-link{
+    background-color: rgb(var(--bs-secondary-rgb));
+    border-radius: 10px;
+}
